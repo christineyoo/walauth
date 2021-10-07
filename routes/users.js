@@ -50,12 +50,15 @@ router.post('/register', (req, res) => {
                             newUser.password = hash
                             newUser.save()
                                 .then(user => {
-                                    //todo
+                                    req.flash('success_msg', 'You are registered and able to log in')
+                                    req.redirect('/users/login')
                                 })
+                                .catch(err => console.log(err))
                         }))
             }
         })
-  }
+        .catch(err => console.log(err))
+    }
 })
 
 module.exports = router
