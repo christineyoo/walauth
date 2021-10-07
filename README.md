@@ -1,6 +1,6 @@
 # WalAuth
 
-WalAuth is a simple authentication app built with Node.js and Express. It asks the user to register or log in by intering their email and password.
+WalAuth is a simple authentication app built with Node.js and Express. It asks the user to register or log in by entering their email and password.
 Scroll down to "Set Up" for instructions on how to get this application on your local machine.
 
 ## Endpoints
