@@ -24,7 +24,7 @@ Scroll down to "Set Up" for instructions on how to get this application on your 
 - express-session
 
 ## Set up
-1. Clone this respository to your local machine `git clone WALAUTH-URL`
+1. Clone this respository to your local machine `git clone https://github.com/christineyoo/walauth.git`
 2. `cd` into the cloned repository
-3. Install the node dependencies `npm install`
+3. Install the node dependencies with `npm install`
 4. Start the application `npm start`
