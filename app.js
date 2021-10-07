@@ -1,6 +1,8 @@
 const express = require('express')
 const expressLayouts = require('express-ejs-layouts')
 const mongoose = require('mongoose')
+const flash = require('connect-flash')
+const session = require('express-session')
 const app = express()
 
 //Database config and connect to Mongo
@@ -11,6 +13,14 @@ mongoose.connect(db, { useNewUrlParser: true })
 
 //Bodyparser
 app.use(express.urlencoded({ extended: false }))
+
+//Express session and connect with flash
+app.use(session({
+    secret: 'secret',
+    resave: true,
+    saveUninitialized: true
+}))
+app.use(flash())
 
 //EJS
 app.use(expressLayouts)
