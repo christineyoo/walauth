@@ -5,10 +5,11 @@ const app = express()
 
 //Database config and connect to Mongo
 const db = require('./config/keys').MongoURI
-mongoose.connect(db, { newUrlParser: true })
+mongoose.connect(db, { useNewUrlParser: true })
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err))
 
+//Bodyparser
 app.use(express.urlencoded({ extended: false }))
 
 //EJS
