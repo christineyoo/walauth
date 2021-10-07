@@ -21,6 +21,11 @@ app.use(session({
     saveUninitialized: true
 }))
 app.use(flash())
+//Global variables to use custom color flash messages
+app.use((req, res, next) => {
+    res.locals.success_msg = req.flash('success_msg')
+    res.locals.error_msg = req.flash('error_msg')
+})
 
 //EJS
 app.use(expressLayouts)
