@@ -8,7 +8,7 @@ Scroll down to "Set Up" for instructions on how to get this application on your 
 - `/dashboard` is a protected route that routes to the dashboard only after a user is logged in
 - `/users/login` routes to a login page
 - `/users/register` routes to a register page
-- '`users/logout` logs the user out and redirects to the login page
+- `users/logout` logs the user out and redirects to the login page
 
 ## Features
 - Form validation
